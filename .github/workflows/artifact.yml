@@ -29,6 +29,8 @@ jobs:
         with:
           name: hello-artifact
           path: ./artifacts
+      - name: validate    
+        run: ls
 
       - name: check-file
         run: cat ./artifacts/hello.txt
